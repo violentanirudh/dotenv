@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="p-4 rounded-lg m-4">
+    <nav className="py-4 rounded-lg">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <img src="/logo.png" alt="dotENV Logo" className="h-16 mr-2" />
