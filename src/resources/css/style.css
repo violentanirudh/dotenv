@@ -825,6 +825,14 @@ video {
   width: 100vw;
 }
 
+.w-9{
+  width: 2.25rem;
+}
+
+.w-80{
+  width: 20rem;
+}
+
 .max-w-2xl{
   max-width: 42rem;
 }
@@ -852,6 +860,10 @@ video {
 
 .cursor-none{
   cursor: none;
+}
+
+.resize{
+  resize: both;
 }
 
 .grid-cols-1{

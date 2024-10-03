@@ -67,11 +67,13 @@ const Blog = () => {
             <BlogPost key={index} {...post} />
           ))}
         </div>
-        <Link to="/events" className='inline-block mt-12'>
-          <button className="bg-indigo-600 hover:ring-4 hover:scale-105 hover:ring-indigo-950 text-white py-3 px-8 rounded transition duration-300">
-            Read All Blogs
-          </button>
-        </Link>
+        <Fade triggerOnce direction='up'>
+          <Link to="/events" className='inline-block mt-12'>
+            <button className="bg-indigo-600 hover:ring-4 hover:scale-105 hover:ring-indigo-950 text-white py-3 px-8 rounded transition duration-300">
+              Read All Blogs
+            </button>
+          </Link>
+        </Fade>
       </div>
     </div>
   );

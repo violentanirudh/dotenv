@@ -41,8 +41,8 @@ const Volunteers = () => {
       <h1 className="text-6xl font-bold text-center mb-12 uppercase">Volunteers</h1>
       <div className="flex gap-8 justify-center items-center flex-wrap mx-auto">
         {volunteers.map((volunteer, index) => (
-            <Fade triggerOnce direction='up'>
-                <div key={index} className="flex items-center space-x-4 w-72">
+            <Fade key={index} triggerOnce direction='up'>
+                <div className="flex items-center space-x-4 w-72">
                     <img
                     src={volunteer.image}
                     alt={volunteer.name}
