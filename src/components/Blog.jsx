@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
 import { Clock, MessageSquare } from 'react-feather';
+import { Fade } from 'react-awesome-reveal';
+
 
 const BlogPost = ({ image, category, title, description, time, comments }) => (
+  <Fade triggerOnce direction='up'>
   <div className="bg-black/10 ring-1 ring-zinc-800/40 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
     <img src={image} alt={title} className="w-full" />
     <div className="p-4">
@@ -22,6 +25,7 @@ const BlogPost = ({ image, category, title, description, time, comments }) => (
       </div>
     </div>
   </div>
+  </Fade>
 );
 
 const Blog = () => {
