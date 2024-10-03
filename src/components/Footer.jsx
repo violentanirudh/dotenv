@@ -3,7 +3,7 @@ import { Fade } from 'react-awesome-reveal';
 
 const Footer = () => {
   return (
-    <footer className="text-white py-8 mt-20">
+    <footer className="text-white py-20">
       <div className="container mx-auto text-center space-y-10">
         <Fade triggerOnce>
           <h3 className="text-6xl font-semibold">dotENV</h3>
