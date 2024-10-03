@@ -41,13 +41,14 @@ const HeroSection = () => {
   return (
     <div className="flex flex-col items-center justify-center py-40 px-4 text-center">
       <h1 className="text-3xl md:text-6xl font-bold mb-4 text-white">
-        Explore New Variables:
-        <span className="block mt-2 h-20 text-indigo-400">
+        <span className='relative'>Explore New Variables</span>
+        <span className="block mt-2 h-20 text-indigo-400 relative">
           {text}
           <span className="animate-blink">|</span>
+          {/* <img src="/underline.svg" alt="Underline" className='absolute w-56 left-1/2 -translate-x-1/2 mt-2 opacity-40 z-0' /> */}
         </span>
       </h1>
-      <p className="mb-8 max-w-2xl">
+      <p className="mb-8 max-w-2xl z-10">
         Dive into the world of cutting-edge technology. Discover the latest trends, tools, and techniques that are shaping the future of software development and innovation.
       </p>
       <div className="flex flex-col sm:flex-row gap-4">

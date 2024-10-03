@@ -28,7 +28,7 @@ const UpcomingEvents = () => {
   ];
 
   return (
-    <section className="py-16">
+    <section className="py-20">
       <div className="container mx-auto">
         <h2 className="text-6xl font-bold text-center uppercase text-white mb-12">Upcoming Events</h2>
         <div className="relative">

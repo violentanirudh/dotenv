@@ -8,7 +8,6 @@ import AboutUsPage from './Pages/AboutUsPage';
 // import TeamPage from './Pages/TeamPage';
 // import EventsPage from './Pages/EventsPage';
 
-
 const App = () => {
   return (
     <Routes>
