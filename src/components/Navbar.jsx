@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Menu, X } from 'react-feather';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,23 +12,28 @@ const Navbar = () => {
   return (
     <nav className="py-4 rounded-lg">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="flex items-center">
-          <img src="/logo.png" alt="dotENV Logo" className="h-16 mr-2" />
-        </div>
+        <Link to="/">
+          <div className="flex items-center">
+            <img src="/logo.png" alt="dotENV Logo" className="h-16 mr-2" />
+          </div>
+        </Link>
         
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
-          <a href="#" className="hover:text-indigo-400">Events</a>
-          <a href="#" className="hover:text-indigo-400">Team</a>
-          <a href="#" className="hover:text-indigo-400">Blog</a>
-          <a href="#" className="hover:text-indigo-400">Testimonials</a>
-          <a href="#" className="hover:text-indigo-400">Stats</a>
+          <a href="/events" className="hover:text-indigo-400">Events</a>
+          <a href="/team" className="hover:text-indigo-400">Team</a>
+          <a href="/blog" className="hover:text-indigo-400">Blog</a>
+          <a href="/testimonials" className="hover:text-indigo-400">Testimonials</a>
+          <a href="/stats" className="hover:text-indigo-400">Stats</a>
+          <a href="/about" className="hover:text-indigo-400">About Us</a>
         </div>
         
         <div className="hidden md:flex items-center space-x-4">
-          <button className="bg-indigo-600 px-4 py-2 rounded text-white">
-            Join The Community
-          </button>
+          <Link to="/join">
+            <button className="bg-indigo-600 px-4 py-2 rounded text-white">
+              Join The Community
+            </button>
+          </Link>
         </div>
         
         {/* Mobile Menu Button */}
@@ -41,14 +47,17 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden mt-4 flex flex-col gap-4 px-4">
-          <a href="#" className="hover:text-indigo-400">Events</a>
-          <a href="#" className="hover:text-indigo-400">Team</a>
-          <a href="#" className="hover:text-indigo-400">Blog</a>
-          <a href="#" className="hover:text-indigo-400">Testimonials</a>
-          <a href="#" className="hover:text-indigo-400">Stats</a>
-          <button className="bg-indigo-600 px-4 py-2 rounded text-white">
-            Join The Community
-          </button>
+          <a href="/events" className="hover:text-indigo-400">Events</a>
+          <a href="/team" className="hover:text-indigo-400">Team</a>
+          <a href="/blog" className="hover:text-indigo-400">Blog</a>
+          <a href="/testimonials" className="hover:text-indigo-400">Testimonials</a>
+          <a href="/stats" className="hover:text-indigo-400">Stats</a>
+          <a href="/about" className="hover:text-indigo-400">About Us</a>
+          <Link to="/join">
+            <button className="bg-indigo-600 px-4 py-2 rounded text-white">
+              Join The Community
+            </button>
+          </Link>
         </div>
       )}
     </nav>
