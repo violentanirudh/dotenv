@@ -28,7 +28,11 @@ const UpcomingEvents = () => {
   ];
 
   return (
-    <section className="py-16">
+    <section className="py-20">
+      <Fade
+        triggerOnce
+        direction='up'
+      >
       <div className="container mx-auto">
         <h2 className="text-6xl font-bold text-center uppercase text-white mb-12">Upcoming Events</h2>
         <div className="relative">
@@ -40,7 +44,7 @@ const UpcomingEvents = () => {
             <Fade
               key={index}
               triggerOnce
-              duration={1000}
+              direction='up'
             >
               <div
                 className={`flex flex-col md:flex-row items-center gap-4 mb-16 ${
@@ -65,12 +69,13 @@ const UpcomingEvents = () => {
                     </div>
                   </div>
                 </div>
-                <div className="w-6 h-6 absolute -left-3 ml-[2px] bg-slate-900 transform bg-transparent rounded-xl border-4 border-indigo-600"></div>
+                <div className="w-6 h-6 absolute -left-3 ml-[2px] bg-slate-900 transform rounded-xl border-4 border-indigo-600"></div>
               </div>
             </Fade>
           ))}
         </div>
       </div>
+      </Fade>
     </section>
   );
 };

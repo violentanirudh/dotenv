@@ -3,9 +3,9 @@ import { Fade } from 'react-awesome-reveal';
 
 const Footer = () => {
   return (
-    <footer className="text-white py-8 mt-20">
+    <footer className="text-white py-20">
       <div className="container mx-auto text-center space-y-10">
-        <Fade triggerOnce>
+        <Fade triggerOnce direction='up'>
           <h3 className="text-6xl font-semibold">dotENV</h3>
 
           <p className="text-slate-300">
@@ -28,7 +28,7 @@ const Footer = () => {
           </div>
 
           <p className="text-slate-500">
-            &copy; 2024 dotENV. Design by <span className="text-blue-400">Team dotENV.</span>
+            &copy; 2024 dotENV. Design by <span className="text-indigo-400">Team dotENV.</span>
           </p>
         </Fade>
       </div>
