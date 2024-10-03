@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const ComingSoon = () => {
   return (
-    <div className="h-96 bg-gray-100 flex flex-col items-center justify-center text-center">
+    <div className="py-40 flex flex-col items-center justify-center text-center mt-12">
       <h1 className="text-6xl font-bold text-white mb-4">Coming Soon</h1>
       <p className="text-lg mb-6 text-indigo-300">
         We&apos;re working hard to bring you something amazing. Stay tuned!
