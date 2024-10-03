@@ -6,7 +6,7 @@ const ContactForm = () => {
     <div className="py-20">
       <div className="container mx-auto">
         <h2 className="text-6xl font-bold text-white mb-8 text-center uppercase">Contact Us</h2>
-        <div className="flex flex-col lg:flex-row gap-8 items-center">
+        <div className="flex flex-col lg:flex-row gap-8 items-start">
           {/* Contact Form */}
           <div className="lg:w-2/3 bg-black/20 p-6 rounded-lg">
             <h2 className="text-2xl text-white uppercase font-semibold">Got A Question?</h2>
@@ -61,16 +61,16 @@ const ContactForm = () => {
             </div>
             <h3 className="text-xl font-semibold text-white mt-8 mb-4">Stay Tuned</h3>
             <div className="flex space-x-8">
-              <a href="#" className="hover:text-blue-400">
+              <a href="#" className="hover:text-indigo-600">
                 <Facebook size={24} />
               </a>
-              <a href="#" className="hover:text-blue-400">
+              <a href="#" className="hover:text-indigo-600">
                 <Twitter size={24} />
               </a>
-              <a href="#" className="hover:text-blue-400">
+              <a href="#" className="hover:text-indigo-600">
                 <Instagram size={24} />
               </a>
-              <a href="#" className="hover:text-blue-400">
+              <a href="#" className="hover:text-indigo-600">
                 <Linkedin size={24} />
               </a>
             </div>

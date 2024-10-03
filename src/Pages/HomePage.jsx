@@ -3,6 +3,7 @@ import UpcomingEvents from "../components/UpcomingEvents";
 import TeamSection from "../components/TeamSection";
 import Blog from "../components/Blog";
 import ContactForm from "../components/ContactForm";
+import Volunteers from "../components/Volunteers";
 
 const HomePage = () => {
     return (
@@ -10,6 +11,7 @@ const HomePage = () => {
             <HeroSection />
             <UpcomingEvents />
             <TeamSection />
+            <Volunteers />
             <Blog />
             <ContactForm />
         </>
