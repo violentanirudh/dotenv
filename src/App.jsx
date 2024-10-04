@@ -5,7 +5,7 @@ import HomePage from './Pages/HomePage';
 import NotFound from './Pages/NotFound';
 import ComingSoon from './Pages/ComingSoonPage';
 import AboutPage from './Pages/AboutPage';
-// import TeamPage from './Pages/TeamPage';
+import TeamPage from './Pages/TeamPage';
 // import EventsPage from './Pages/EventsPage';
 
 const App = () => {
@@ -14,9 +14,8 @@ const App = () => {
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route path="/events" element={<ComingSoon />} />
-        <Route path="/team" element={<ComingSoon />} />
+        <Route path="/team" element={<TeamPage />} />
         <Route path="/blog" element={<ComingSoon />} />
-        <Route path="/testimonials" element={<ComingSoon />} />
         <Route path="/stats" element={<ComingSoon />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/join" element={<ComingSoon />} />

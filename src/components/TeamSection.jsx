@@ -4,11 +4,11 @@ import { Fade } from 'react-awesome-reveal'; // Import Fade from react-awesome-r
 
 const teamMembers = [
   {
-    name: "Kadir Myre",
-    position: "Lead Developer",
+    name: "Harsh Mer",
+    position: "Outreach Lead",
     description:
       "We focus on delivering the best tech solutions to solve real-world problems.",
-    image: "https://via.placeholder.com/150", // Replace with real image
+    image: "/team/harsh.jpeg", // Replace with real image
     socials: {
       facebook: "#",
       twitter: "#",
@@ -17,11 +17,11 @@ const teamMembers = [
     },
   },
   {
-    name: "Isabella Thompson",
-    position: "UI/UX Designer",
+    name: "Virengiri Goswami",
+    position: "Tech Lead",
     description:
       "Creating intuitive and engaging user experiences is my passion.",
-    image: "https://via.placeholder.com/150", // Replace with real image
+    image: "/team/virengiri.jpeg", // Replace with real image
     socials: {
       facebook: "#",
       twitter: "#",
@@ -30,11 +30,11 @@ const teamMembers = [
     },
   },
   {
-    name: "Zainab Rahman",
-    position: "Backend Developer",
+    name: "Milan Gohel",
+    position: "DSA Lead",
     description:
       "Building efficient and scalable backend architectures for smooth performance.",
-    image: "https://via.placeholder.com/150", // Replace with real image
+    image: "/team/milan.jpeg", // Replace with real image
     socials: {
       facebook: "#",
       twitter: "#",
@@ -43,11 +43,24 @@ const teamMembers = [
     },
   },
   {
-    name: "Aiden Davis",
-    position: "Full Stack Developer",
+    name: "Mann Shiyal",
+    position: "Android Lead",
     description:
       "I bridge the gap between design and technology for seamless development.",
-    image: "https://via.placeholder.com/150", // Replace with real image
+    image: "/team/mann.jpeg", // Replace with real image
+    socials: {
+      facebook: "#",
+      twitter: "#",
+      instagram: "#",
+      linkedin: "#",
+    },
+  },
+  {
+    name: "Tejash Khoraba",
+    position: "Design Lead",
+    description:
+      "I bridge the gap between design and technology for seamless development.",
+    image: "/team/tejash.jpeg", // Replace with real image
     socials: {
       facebook: "#",
       twitter: "#",
@@ -88,9 +101,9 @@ const TeamSection = () => {
                     </div>
                   </div>
                   <div className="p-6">
-                    <div className="flex gap-4 items-center mb-4">
+                    <div className="flex gap-4 items-center">
                       <img
-                        className="w-24 h-24 rounded"
+                        className="w-24 h-24 rounded object-cover"
                         src={member.image}
                         alt={member.name}
                       />
@@ -99,7 +112,7 @@ const TeamSection = () => {
                         <p className="text-gray-400">{member.position}</p>
                       </div>
                     </div>
-                    <p className="text-gray-300 mt-2 text-left">{member.description}</p>
+                    {/* <p className="text-gray-300 mt-2 text-left">{member.description}</p> */}
                   </div>
                 </div>
               </Fade>

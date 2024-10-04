@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-4">
           <Link to="/join">
             <button className="bg-indigo-600 px-4 py-2 rounded text-white">
-              Join The Community
+              Contact  
             </button>
           </Link>
         </div>
@@ -51,7 +51,7 @@ const Navbar = () => {
           <a href="/blog" className="hover:text-indigo-400">Blog</a>
           <Link to="/join">
             <button className="bg-indigo-600 px-4 py-2 rounded text-white">
-              Join The Community
+              Contact
             </button>
           </Link>
         </div>
