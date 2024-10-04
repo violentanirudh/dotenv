@@ -11,8 +11,7 @@ const Footer = () => {
         <Fade key={location.pathname} triggerOnce direction='up'>
           <h3 className="text-6xl font-semibold">.env</h3>
           <p className="text-slate-300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione veniam amet autem sunt, perspiciatis nemo.
-          </p>
+            We're building a tech community focused on helping you explore and grow in areas like Cloud, DevOps, Application Development, Blockchain, and UI/UX. Through hands-on workshops and real-world projects, you'll have the chance to build practical skills and collaborate with peers.          </p>
           <div className="flex justify-center space-x-8">
             <Link to="https://x.com/_dotenv_" className="hover:text-indigo-500" target='_blank'>
               <FaXTwitter size={24} />
