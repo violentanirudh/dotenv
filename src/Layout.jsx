@@ -53,7 +53,7 @@ const Layout = () => {
           <Terminal isOpen={isTerminalOpen} setIsOpen={setIsTerminalOpen} />
           <button
             onClick={() => setIsTerminalOpen(!isTerminalOpen)}
-            className="fixed bottom-8 right-8 bg-indigo-600 text-white p-2 rounded shadow-lg hover:bg-indigo-700 transition-colors duration-200 z-50"
+            className="fixed bottom-8 right-8 bg-indigo-600 text-white p-2 rounded shadow-lg hover:bg-indigo-700 transition-colors duration-200 z-30"
           >
             <TerminalIcon size={24} />
           </button>
