@@ -1,26 +1,31 @@
+import { Link } from "react-router-dom";
+
 const AboutPage = () => {
     return (
-        <div className="flex items-center justify-between px-4 py-40">
-            <div>
-                <h1 className="text-6xl font-bold text-white mb-8">About .ENV</h1>
-                <p className="text-xl max-w-2xl leading-relaxed mb-8 text-gray-300">
+        <div className="flex flex-col md:flex-row items-center justify-between py-40">
+            <div className="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                <h1 className="text-6xl font-bold text-white mb-4 sm:mb-6 md:mb-8">ABOUT .env</h1>
+                <p className="text-lg mb-8 text-gray-300">
                     Welcome to .ENV, a vibrant community dedicated to empowering individuals in the tech industry. We are a group of passionate individuals committed to fostering collaboration, innovation, and support among our members.
                 </p>
+                <div>
+                <div className="flex gap-4">
+                    <Link to="/events">
+                        <button className="bg-indigo-600 hover:ring-4 hover:scale-105 hover:ring-indigo-950 text-white py-3 px-8 rounded transition duration-300">
+                        Explore Events
+                        </button>
+                    </Link>
+                    <Link to="/team">
+                        <button className="hover:scale-105 bg-black/20 py-3 px-8 rounded border border-zinc-800/20 transition duration-300">
+                        Meet the Team
+                        </button>
+                    </Link>
+                    </div>
+                </div>
             </div>
-            <img src="/community.svg" className="w-96"/>
-        {/* 
-            <div className="mt-16 w-full flex flex-col items-center">
-                <h2 className="text-4xl font-semibold text-white mb-6">Join Our Community</h2>
-                <p className="text-lg max-w-xl text-center leading-relaxed mb-8 text-gray-300">
-                    Become a part of our dynamic community where you can connect with like-minded individuals, share knowledge, and collaborate on exciting projects. Your journey towards personal and professional growth starts here!
-                </p>
-                <a 
-                    href="#" 
-                    className="bg-indigo-600 text-white px-8 py-4 rounded-lg hover:bg-indigo-500 transition-all"
-                >
-                    Join The Community
-                </a>
-            </div> */}
+            <div className="max-w-80 mx-auto flex justify-center">
+                <img src="/startup.svg" alt="Team" className="w-full"/>
+            </div>
         </div>
     );
 }

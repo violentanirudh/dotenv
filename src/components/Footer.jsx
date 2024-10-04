@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="text-white py-20">
       <div className="container mx-auto text-center space-y-10">
         <Fade triggerOnce direction='up'>
-          <h3 className="text-6xl font-semibold">dotENV</h3>
+          <h3 className="text-6xl font-semibold">.env</h3>
 
           <p className="text-slate-300">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione veniam amet autem sunt, perspiciatis nemo.

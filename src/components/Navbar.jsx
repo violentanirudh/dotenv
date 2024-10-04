@@ -44,13 +44,11 @@ const Navbar = () => {
       
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden mt-4 flex flex-col gap-4 px-4">
+        <div className="md:hidden mt-4 flex flex-col gap-4">
+          <a href="/about" className="hover:text-indigo-400">About</a>
           <a href="/events" className="hover:text-indigo-400">Events</a>
           <a href="/team" className="hover:text-indigo-400">Team</a>
           <a href="/blog" className="hover:text-indigo-400">Blog</a>
-          <a href="/testimonials" className="hover:text-indigo-400">Testimonials</a>
-          <a href="/stats" className="hover:text-indigo-400">Stats</a>
-          <a href="/about" className="hover:text-indigo-400">About Us</a>
           <Link to="/join">
             <button className="bg-indigo-600 px-4 py-2 rounded text-white">
               Join The Community
