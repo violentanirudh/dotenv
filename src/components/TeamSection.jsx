@@ -1,6 +1,7 @@
 import React from 'react';
-import { Facebook, Twitter, Instagram, Linkedin } from "react-feather"; // Import Feather icons
-import { Fade } from 'react-awesome-reveal'; // Import Fade from react-awesome-reveal
+import { Facebook, TwitterIcon, Instagram, Linkedin } from "lucide-react";
+import { Fade } from 'react-awesome-reveal';
+import { Link } from 'react-router-dom';
 
 const teamMembers = [
   {
@@ -8,12 +9,11 @@ const teamMembers = [
     position: "Outreach Lead",
     description:
       "We focus on delivering the best tech solutions to solve real-world problems.",
-    image: "/team/harsh.jpeg", // Replace with real image
+    image: "/team/harsh.jpeg",
     socials: {
-      facebook: "#",
-      twitter: "#",
-      instagram: "#",
-      linkedin: "#",
+      x: "https://x.com/HarshMer623",
+      instagram: "www.linkedin.com/in/harsh-mer623",
+      linkedin: "https://www.instagram.com/harsh_mer623",
     },
   },
   {
@@ -21,12 +21,11 @@ const teamMembers = [
     position: "Tech Lead",
     description:
       "Creating intuitive and engaging user experiences is my passion.",
-    image: "/team/virengiri.jpeg", // Replace with real image
+    image: "/team/virengiri.jpeg",
     socials: {
-      facebook: "#",
-      twitter: "#",
-      instagram: "#",
-      linkedin: "#",
+      x: "https://x.com/virengiri03",
+      instagram: "https://www.instagram.com/virengirigoswami.dev/",
+      linkedin: "https://www.linkedin.com/in/virengiri-goswami",
     },
   },
   {
@@ -34,12 +33,11 @@ const teamMembers = [
     position: "DSA Lead",
     description:
       "Building efficient and scalable backend architectures for smooth performance.",
-    image: "/team/milan.jpeg", // Replace with real image
+    image: "/team/milan.jpeg",
     socials: {
-      facebook: "#",
-      twitter: "#",
-      instagram: "#",
-      linkedin: "#",
+      x: "https://x.com/gohelmilan91823",
+      instagram: "https://www.instagram.com/milan.gohel.244/",
+      linkedin: "https://www.linkedin.com/in/milan-gohel-114402226",
     },
   },
   {
@@ -47,12 +45,11 @@ const teamMembers = [
     position: "Android Lead",
     description:
       "I bridge the gap between design and technology for seamless development.",
-    image: "/team/mann.jpeg", // Replace with real image
+    image: "/team/mann.jpeg",
     socials: {
-      facebook: "#",
-      twitter: "#",
-      instagram: "#",
-      linkedin: "#",
+      x: "https://linktr.ee/dotenvcommunity",
+      instagram: "https://www.instagram.com/mannshiyal/",
+      linkedin: "https://www.linkedin.com/in/mann-shiyal-a31ba5227",
     },
   },
   {
@@ -60,18 +57,16 @@ const teamMembers = [
     position: "Design Lead",
     description:
       "I bridge the gap between design and technology for seamless development.",
-    image: "/team/tejash.jpeg", // Replace with real image
+    image: "/team/tejash.jpeg",
     socials: {
-      facebook: "#",
-      twitter: "#",
-      instagram: "#",
-      linkedin: "#",
+      x: "https://www.instagram.com/tejashkhoraba.design",
+      instagram: "https://x.com/Tejash_77",
+      linkedin: "https://www.linkedin.com/in/tejashkhoraba",
     },
   },
 ];
 
 const TeamSection = () => {
-
   return (
     <section className="py-20">
       <Fade triggerOnce direction='up'>
@@ -86,18 +81,15 @@ const TeamSection = () => {
                   <div className="border-b flex justify-between border-zinc-800/40 p-4">
                     <p>Connect</p>
                     <div className="flex gap-4">
-                      <a href={member.socials.facebook} aria-label="Facebook">
-                        <Facebook size={20} className="text-gray-300 hover:text-white" />
-                      </a>
-                      <a href={member.socials.twitter} aria-label="Twitter">
-                        <Twitter size={20} className="text-gray-300 hover:text-white" />
-                      </a>
-                      <a href={member.socials.instagram} aria-label="Instagram">
+                      <Link to={member.socials.x} aria-label="X" target='_blank'>
+                        <TwitterIcon size={20} className="text-gray-300 hover:text-white" />
+                      </Link>
+                      <Link to={member.socials.instagram} aria-label="Instagram" target='_blank'>
                         <Instagram size={20} className="text-gray-300 hover:text-white" />
-                      </a>
-                      <a href={member.socials.linkedin} aria-label="LinkedIn">
+                      </Link>
+                      <Link to={member.socials.linkedin} aria-label="LinkedIn" target='_blank'>
                         <Linkedin size={20} className="text-gray-300 hover:text-white" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="p-6">

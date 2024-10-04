@@ -6,7 +6,6 @@ import NotFound from './Pages/NotFound';
 import ComingSoon from './Pages/ComingSoonPage';
 import AboutPage from './Pages/AboutPage';
 import TeamPage from './Pages/TeamPage';
-// import EventsPage from './Pages/EventsPage';
 
 const App = () => {
   return (

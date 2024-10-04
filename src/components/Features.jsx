@@ -1,6 +1,6 @@
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
-import { BookOpen, Share2, Users, MessageSquare, Globe, Bell, Award, Tool, Compass, Calendar } from 'react-feather';
+import { BookOpen, Share2, Users, MessageSquare, Globe, Bell, Award, Wrench, Compass } from 'lucide-react';
 
 const Features = () => {
   return (
@@ -46,7 +46,7 @@ const Features = () => {
             description="Organizing engaging contests and quizzes to reinforce learning."
           />
           <FeatureCard
-            icon={<Tool size={24} className="text-indigo-400" />}
+            icon={<Wrench size={24} className="text-indigo-400" />}
             title="Workshops and Bootcamps"
             description="Hosting hands-on workshops and bootcamps for practical skill development."
           />
