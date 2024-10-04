@@ -12,6 +12,8 @@ const Footer = () => {
           <h3 className="text-6xl font-semibold">.env</h3>
           <p className="text-slate-300">
           We're building a tech community to help you grow in Cloud, DevOps, App Development, Blockchain, and UI/UX. Join hands-on workshops and real-world projects to develop practical skills and collaborate with peers.          <div className="flex justify-center space-x-8">
+          </p>
+          <div>
             <Link to="https://x.com/_dotenv_" className="hover:text-indigo-500" target='_blank'>
               <FaXTwitter size={24} />
             </Link>
