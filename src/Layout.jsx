@@ -31,34 +31,34 @@ const Layout = () => {
 
   useEffect(() => {
     setLoading(true);
-    const timer = setTimeout(() => setLoading(false), 300); // Simulate loading time
+    const timer = setTimeout(() => setLoading(false), 200); // Simulate loading time
     return () => clearTimeout(timer);
   }, [location]);
 
   return (
     <GlowingCursor>
-      {loading ? (
-        <PreLoader />
-      ) : (
-        <div className='bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-950 h-screen w-screen relative text-slate-300'>
+      <div className='bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-950 h-screen w-screen relative text-slate-300'>
           <div className="absolute inset-0 bg-zinc-950/60 overflow-y-scroll">
-            <div className='py-12 px-4 bg-[url("/graph-paper.svg")] bg-repeat'>
-              <div className='max-w-screen-xl mx-auto'>
-                <Navbar />
-                <Outlet />
-                <Footer />
-              </div>
-            </div>
+            <div className='py-12 px-4 bg-[url("/graph-paper.svg")] bg-repeat min-h-screen'>
+              {loading ? (
+                <PreLoader />
+              ) : (
+                
+                <div className='max-w-screen-xl mx-auto'>
+                  <Navbar />
+                  <Outlet />
+                  <Footer />
+                  <Terminal isOpen={isTerminalOpen} setIsOpen={setIsTerminalOpen} /><button
+                    onClick={() => setIsTerminalOpen(!isTerminalOpen)}
+                    className="fixed bottom-8 right-8 bg-indigo-600 text-white p-2 rounded shadow-lg hover:bg-indigo-700 transition-colors duration-200 z-30"
+                  >
+                    <TerminalIcon size={24} />
+                  </button>
+                </div>
+              )}
           </div>
-          <Terminal isOpen={isTerminalOpen} setIsOpen={setIsTerminalOpen} />
-          <button
-            onClick={() => setIsTerminalOpen(!isTerminalOpen)}
-            className="fixed bottom-8 right-8 bg-indigo-600 text-white p-2 rounded shadow-lg hover:bg-indigo-700 transition-colors duration-200 z-30"
-          >
-            <TerminalIcon size={24} />
-          </button>
         </div>
-      )}
+      </div>
     </GlowingCursor>
   );
 }

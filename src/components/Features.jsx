@@ -1,6 +1,6 @@
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
-import { BookOpen, Share2, Users, MessageSquare, Globe, Bell, Award, Wrench, Compass } from 'lucide-react';
+import { FaBookOpen, FaShareNodes, FaUsers, FaComments, FaGlobe, FaBell, FaAward, FaScrewdriverWrench, FaCompass } from 'react-icons/fa6';
 
 const Features = () => {
   return (
@@ -11,47 +11,47 @@ const Features = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto">
           <FeatureCard
-            icon={<BookOpen size={24} className="text-indigo-400" />}
+            icon={<FaBookOpen size={24} className="text-indigo-400" />}
             title="Learning"
             description="Encouraging continuous learning of emerging technologies and skills."
           />
           <FeatureCard
-            icon={<Share2 size={24} className="text-indigo-400" />}
+            icon={<FaShareNodes size={24} className="text-indigo-400" />}
             title="Sharing Knowledge"
             description="Promoting a culture of collaboration where members exchange insights and experiences."
           />
           <FeatureCard
-            icon={<Users size={24} className="text-indigo-400" />}
+            icon={<FaUsers size={24} className="text-indigo-400" />}
             title="Team Management"
             description="Developing leadership and teamwork skills through group activities and projects."
           />
           <FeatureCard
-            icon={<MessageSquare size={24} className="text-indigo-400" />}
+            icon={<FaComments size={24} className="text-indigo-400" />}
             title="Soft Skills"
             description="Enhancing communication, problem-solving, and other essential interpersonal skills."
           />
           <FeatureCard
-            icon={<Globe size={24} className="text-indigo-400" />}
+            icon={<FaGlobe size={24} className="text-indigo-400" />}
             title="Networking"
             description="Building connections with peers, mentors, and industry professionals."
           />
           <FeatureCard
-            icon={<Bell size={24} className="text-indigo-400" />}
+            icon={<FaBell size={24} className="text-indigo-400" />}
             title="Awareness"
             description="Providing information on open-source contributions, internships, hackathons, meetups, and various opportunities."
           />
           <FeatureCard
-            icon={<Award size={24} className="text-indigo-400" />}
+            icon={<FaAward size={24} className="text-indigo-400" />}
             title="Contests and Quizzes"
             description="Organizing engaging contests and quizzes to reinforce learning."
           />
           <FeatureCard
-            icon={<Wrench size={24} className="text-indigo-400" />}
+            icon={<FaScrewdriverWrench size={24} className="text-indigo-400" />}
             title="Workshops and Bootcamps"
             description="Hosting hands-on workshops and bootcamps for practical skill development."
           />
           <FeatureCard
-            icon={<Compass size={24} className="text-indigo-400" />}
+            icon={<FaCompass size={24} className="text-indigo-400" />}
             title="Mentorship and Guidance"
             description="Offering mentorship programs to help members navigate their career paths and educational journeys."
           />

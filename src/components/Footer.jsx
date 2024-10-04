@@ -1,7 +1,6 @@
-import React from 'react';
-import { TwitterIcon, Linkedin, Instagram } from 'lucide-react';
 import { Fade } from 'react-awesome-reveal';
 import { Link, useLocation } from 'react-router-dom';
+import { FaInstagram, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
   const location = useLocation();
@@ -16,13 +15,13 @@ const Footer = () => {
           </p>
           <div className="flex justify-center space-x-8">
             <Link to="https://x.com/_dotenv_" className="hover:text-indigo-500" target='_blank'>
-              <TwitterIcon size={24} />
+              <FaXTwitter size={24} />
             </Link>
             <Link to="https://www.instagram.com/dotenv.tech/" className="hover:text-indigo-500" target='_blank'>
-              <Instagram size={24} />
+              <FaInstagram size={24} />
             </Link>
             <Link to="https://www.linkedin.com/company/dotenv-community/" className="hover:text-indigo-500" target='_blank'>
-              <Linkedin size={24} />
+              <FaLinkedinIn size={24} />
             </Link>
           </div>
           <p>

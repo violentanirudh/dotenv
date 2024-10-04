@@ -636,6 +636,10 @@ video {
   left: -0.75rem;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
 .bottom-20{
   bottom: 5rem;
 }
@@ -646,6 +650,10 @@ video {
 
 .left-0{
   left: 0px;
+}
+
+.right-0{
+  right: 0px;
 }
 
 .right-8{
@@ -1029,11 +1037,6 @@ video {
   border-color: rgb(39 39 42 / 0.4);
 }
 
-.bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .bg-black\/10{
   background-color: rgb(0 0 0 / 0.1);
 }
@@ -1042,9 +1045,8 @@ video {
   background-color: rgb(0 0 0 / 0.2);
 }
 
-.bg-gray-900{
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+.bg-black\/60{
+  background-color: rgb(0 0 0 / 0.6);
 }
 
 .bg-indigo-500{
@@ -1083,12 +1085,36 @@ video {
   background-color: rgb(9 9 11 / 0.6);
 }
 
-.bg-opacity-10{
-  --tw-bg-opacity: 0.1;
+.bg-black\/80{
+  background-color: rgb(0 0 0 / 0.8);
 }
 
-.bg-opacity-80{
-  --tw-bg-opacity: 0.8;
+.bg-slate-700\/80{
+  background-color: rgb(51 65 85 / 0.8);
+}
+
+.bg-slate-700\/40{
+  background-color: rgb(51 65 85 / 0.4);
+}
+
+.bg-slate-900\/40{
+  background-color: rgb(15 23 42 / 0.4);
+}
+
+.bg-slate-950\/40{
+  background-color: rgb(2 6 23 / 0.4);
+}
+
+.bg-slate-950\/50{
+  background-color: rgb(2 6 23 / 0.5);
+}
+
+.bg-black\/50{
+  background-color: rgb(0 0 0 / 0.5);
+}
+
+.bg-opacity-10{
+  --tw-bg-opacity: 0.1;
 }
 
 .bg-\[url\(\"\/graph-paper\.svg\"\)\]{

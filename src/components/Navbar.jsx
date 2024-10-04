@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import React, { useState } from 'react';
+import { FaBars, FaXmark } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 import { Fade } from 'react-awesome-reveal';
 
@@ -36,7 +36,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button onClick={toggleMenu} className="text-white">
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? <FaXmark size={24} /> : <FaBars size={24} />}
             </button>
           </div>
         </div>

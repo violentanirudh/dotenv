@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, TwitterIcon, Instagram, Linkedin } from "lucide-react";
+import { FaXTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 import { Fade } from 'react-awesome-reveal';
 import { Link } from 'react-router-dom';
 
@@ -82,13 +82,13 @@ const TeamSection = () => {
                     <p>Connect</p>
                     <div className="flex gap-4">
                       <Link to={member.socials.x} aria-label="X" target='_blank'>
-                        <TwitterIcon size={20} className="text-gray-300 hover:text-white" />
+                        <FaXTwitter size={20} className="text-gray-300 hover:text-white" />
                       </Link>
                       <Link to={member.socials.instagram} aria-label="Instagram" target='_blank'>
-                        <Instagram size={20} className="text-gray-300 hover:text-white" />
+                        <FaInstagram size={20} className="text-gray-300 hover:text-white" />
                       </Link>
                       <Link to={member.socials.linkedin} aria-label="LinkedIn" target='_blank'>
-                        <Linkedin size={20} className="text-gray-300 hover:text-white" />
+                        <FaLinkedinIn size={20} className="text-gray-300 hover:text-white" />
                       </Link>
                     </div>
                   </div>

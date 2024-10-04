@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { FaTerminal } from 'react-icons/fa6';
 
 const Terminal = ({ isOpen, setIsOpen }) => {
   const [input, setInput] = useState('');
@@ -39,7 +40,6 @@ const Terminal = ({ isOpen, setIsOpen }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const trimmedInput = input.trim().toLowerCase();
-    
     if (trimmedInput in commands) {
       setOutput([...output, `user@dotenv $ ${input}`, commands[trimmedInput]]);
       if (trimmedInput === 'clear') {
@@ -48,7 +48,7 @@ const Terminal = ({ isOpen, setIsOpen }) => {
         setOutput([]);
         setIsOpen(false);
       } else if (trimmedInput === 'join') {
-        window.open('https://chat.whatsapp.com/JAZ6QIoO2GFGn3gD55Bo1u', '_blank'); // Replace with actual join URL
+        window.open('https://chat.whatsapp.com/JAZ6QIoO2GFGn3gD55Bo1u', '_blank');
       } else if (trimmedInput === 'home') {
         navigate('/');
       } else if (trimmedInput !== 'help') {
@@ -57,14 +57,13 @@ const Terminal = ({ isOpen, setIsOpen }) => {
     } else {
       setOutput([...output, `user@dotenv $ ${input}`, 'Command not recognized. Type "help" for available commands.']);
     }
-    
     setInput('');
   };
 
   if (!isOpen) return null;
 
   return (
-    <div className="fixed bottom-20 right-8 w-72 md:w-96 h-80 bg-black bg-opacity-80 text-indigo-400 p-4 rounded-lg overflow-hidden">
+    <div className="fixed bottom-20 right-8 w-72 md:w-96 h-80 bg-black/60 text-indigo-400 p-4 rounded-lg overflow-hidden">
       <div ref={outputRef} className="h-64 overflow-y-auto mb-2">
         {output.map((line, index) => (
           <div key={index}>

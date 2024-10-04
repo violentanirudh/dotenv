@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Instagram, Linkedin, TwitterIcon } from 'lucide-react';
+import { FaEnvelope, FaInstagram, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6';
 import { Fade } from 'react-awesome-reveal';
 
 const ContactForm = () => {
@@ -61,20 +61,20 @@ const ContactForm = () => {
                     Join our community of developers and tech enthusiasts. Stay updated with the latest trends, participate in events, and connect with like-minded individuals.
                   </p>
                   <div className="flex items-center text-gray-300">
-                    <Mail className="mr-3" size={20} />
+                    <FaEnvelope className="mr-3" size={20} />
                     <span>example@dotenv.com</span>
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold text-white mt-8 mb-4">Stay Tuned</h3>
                 <div className="flex space-x-8">
                   <Link to="https://x.com/_dotenv_" className="hover:text-indigo-500" target='_blank'>
-                    <TwitterIcon size={24} />
+                    <FaXTwitter size={24} />
                   </Link>
                   <Link to="https://www.instagram.com/dotenv.tech/" className="hover:text-indigo-500" target='_blank'>
-                    <Instagram size={24} />
+                    <FaInstagram size={24} />
                   </Link>
                   <Link to="https://www.linkedin.com/company/dotenv-community/" className="hover:text-indigo-500" target='_blank'>
-                    <Linkedin size={24} />
+                    <FaLinkedinIn size={24} />
                   </Link>
                 </div>
               </div>
