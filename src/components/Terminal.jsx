@@ -63,7 +63,7 @@ const Terminal = ({ isOpen, setIsOpen }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed bottom-20 right-8 w-80 md:w-96 h-80 bg-black/60 text-indigo-400 p-4 rounded-lg overflow-hidden">
+    <div className="fixed bottom-20 right-8 w-80 md:w-96 h-80 bg-black/80 text-indigo-400 p-4 rounded-lg overflow-hidden">
       <div ref={outputRef} className="h-64 overflow-y-auto mb-2 w-full">
         {output.map((line, index) => (
           <div key={index}>
@@ -78,7 +78,7 @@ const Terminal = ({ isOpen, setIsOpen }) => {
         ))}
       </div>
       <form onSubmit={handleSubmit} className="flex w-full">
-        <span className="mr-2"><span className="text-white">user@dotenv $</span></span>
+        <span className="mr-2"><span className="text-white">$</span></span>
         <input
           ref={inputRef}
           type="text"

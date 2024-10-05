@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <Fade delay={50} direction='down'>
-      <nav className="py-4 rounded-lg">
+      <nav className="py-4 rounded-lg relative z-50">
         <div className="container mx-auto flex justify-between items-center">
           <Link to="/">
             <div className="flex items-center">
@@ -42,7 +42,8 @@ const Navbar = () => {
         </div>
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden mt-4 flex flex-col gap-4">
+          <Fade>
+          <div className="md:hidden flex flex-col gap-4 z-50 bg-black/20 p-8 w-full rounded-lg">
             <Link to="/about" className="hover:text-indigo-400">About</Link>
             <Link to="/events" className="hover:text-indigo-400">Events</Link>
             <Link to="/team" className="hover:text-indigo-400">Team</Link>
@@ -53,6 +54,7 @@ const Navbar = () => {
               </button>
             </Link>
           </div>
+          </Fade>
         )}
       </nav>
     </Fade>

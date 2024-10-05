@@ -43,15 +43,15 @@ const HeroSection = () => {
 
   return (
     <Fade direction='up' triggerOnce>
-      <div className="flex flex-col items-center justify-center py-40 px-4 text-center">
+      <div className="flex flex-col items-center justify-center py-40 px-4 text-center z-0">
         <h1 className="text-3xl md:text-6xl font-bold mb-4 text-white">
-          <span className="relative">Explore New Variables</span>
-          <span className="block mt-2 h-20 text-indigo-400 relative">
+          <span>Explore New Variables</span>
+          <span className="block mt-2 h-20 text-indigo-400">
             {text}
             <span className="animate-blink">|</span>
           </span>
         </h1>
-        <p className="mb-8 max-w-2xl z-10">
+        <p className="mb-8 max-w-2xl">
           Dive into the world of cutting-edge technology. Discover the latest trends, tools, and techniques that are shaping the future of software development and innovation.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
