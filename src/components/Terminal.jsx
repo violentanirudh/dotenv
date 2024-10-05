@@ -63,8 +63,8 @@ const Terminal = ({ isOpen, setIsOpen }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed bottom-20 right-8 w-72 md:w-96 h-80 bg-black/60 text-indigo-400 p-4 rounded-lg overflow-hidden">
-      <div ref={outputRef} className="h-64 overflow-y-auto mb-2">
+    <div className="fixed bottom-20 right-8 w-80 md:w-96 h-80 bg-black/60 text-indigo-400 p-4 rounded-lg overflow-hidden">
+      <div ref={outputRef} className="h-64 overflow-y-auto mb-2 w-full">
         {output.map((line, index) => (
           <div key={index}>
             {line.startsWith('user@dotenv $') ? (
@@ -77,7 +77,7 @@ const Terminal = ({ isOpen, setIsOpen }) => {
           </div>
         ))}
       </div>
-      <form onSubmit={handleSubmit} className="flex">
+      <form onSubmit={handleSubmit} className="flex w-full">
         <span className="mr-2"><span className="text-white">user@dotenv $</span></span>
         <input
           ref={inputRef}
